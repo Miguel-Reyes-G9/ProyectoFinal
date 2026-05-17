@@ -23,6 +23,7 @@ void main () {
     calcularGanador();
 }
 
+
 void inicializar () {
 
     for (j=0; j<100; j++) {
@@ -40,8 +41,8 @@ void inicializar () {
     top=1;
 }
 
-void leerVotos () {
 
+void leerVotos () {
     do {
         printf ("Hola, oyente numero %d, que canciones pones en tu top?\n", j+1);
         printf ("0. Cancion cero.\n");
@@ -115,6 +116,7 @@ void calcularCanciones () {
   printf ("La segunda musica preferida es la cancion %d \n", n+1);
 }
 
+
 void calcularGanador () {
     for (cont=0; cont<j; cont++) {
         puntper[cont]=0;
@@ -143,6 +145,6 @@ void calcularGanador () {
 
   printf ("Oyentes con mayor cantidad de puntos: ");
   for (cont=0; cont<n; cont++)
-    printf ("Oyente %d ,", topoyent[cont]+1);
+    printf ("Oyente %d ,", topoyent[cont]);
   printf ("\n\n");
 }
