@@ -1,7 +1,6 @@
 // PROYECTO FINAL
 // ALUMNO: REYES MORALES MIGUEL ALBERTO
 // MATERIA: FUNDAMENTOS DE PROGRAMACION
-
 #include <stdio.h>
 
 int vect[10][100];
@@ -17,17 +16,11 @@ void leerVotos ();
 void calcularCanciones ();
 void calcularGanador ();
 
-int main () {
-
+void main () {
     inicializar();
-
     leerVotos();
-
     calcularCanciones();
-
     calcularGanador();
-
-    return 0;
 }
 
 void inicializar () {
