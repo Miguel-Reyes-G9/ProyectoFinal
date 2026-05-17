@@ -7,6 +7,7 @@
 int vect[10][100];
 int ant[2];
 int pcont[10];
+int puntper[100];
 int i, j, n, op, cont, puntaje, k, top;
 
 void main (){
@@ -132,12 +133,12 @@ void main (){
           ++pcont[i];
         }
     }
-    // Gracias
+    /*
     printf ("\n \n");
     for (i=0; i<10; i++)
         printf ("%d ,", pcont[i]);
     printf ("\n \n");
-    //
+    */
   
     k=0;
     for (i=0; i<10; i++) {
@@ -154,4 +155,33 @@ void main (){
         }
     }
     printf ("La segunda musica preferida es la cancion %d \n", n+1);
+
+  for (i=0; i<10; i++)
+      vect[i][j]=0;
+
+    for (cont=0; cont<=j; cont++) {
+      if (vect[k][cont]==3 && vect[n][cont]==2)
+        puntper[cont]=60;
+      else {
+        if (vect[k][cont]==3)
+            puntper[cont]=30;
+        if (vect[n][cont]=2)
+            puntper[cont]=20;}
+        }
+        
+    k=0;
+    for (i=0; i<=j; i++) {
+        if (puntper[i]>puntper[k])
+            k=i;
+    }
+    for (i=0; i<=j; i++) {
+        if (puntper[i]==k) {
+            pcont[n]=i;
+            ++n;} }
+  
+  printf ("Oyentes con mayor cantidad de puntos:");
+  for (cont=0; cont<=n; cont++)
+    printf ("Oyente %d ,", pcont[cont]);
+
+  printf ("\n\n");
 }
