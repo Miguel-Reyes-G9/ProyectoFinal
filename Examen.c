@@ -104,7 +104,7 @@ void calcularCanciones () {
     if (pcont[i] > pcont[k])
       k=i;
   }
-  printf ("La musica preferida es la cancion %d \n", k+1);
+  printf ("La musica preferida es la cancion %d \n", k);
     
   n=0;
   for (i=0; i<10; i++) {
@@ -113,7 +113,7 @@ void calcularCanciones () {
         n=i;
     }
   }
-  printf ("La segunda musica preferida es la cancion %d \n", n+1);
+  printf ("La segunda musica preferida es la cancion %d \n", n);
 }
 
 
