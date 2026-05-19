@@ -145,6 +145,6 @@ void calcularGanador () {
 
   printf ("Oyentes con mayor cantidad de puntos: ");
   for (cont=0; cont<n; cont++)
-    printf ("Oyente %d ,", topoyent[cont]);
+    printf ("Oyente %d ,", topoyent[cont]+1);
   printf ("\n\n");
 }
